@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import pic1 from "./pic1.jpg";
+import pic2 from "./pic2.jpg"
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div className="mainDiv">
+    <div className="logo">
+      современная живопись
+    </div>
+    <div className="first">
+      <div className="zag1">
+      постимпрессионизм
+      </div>
+      <img src={pic1} alt='something' className="pic1" />
+      <div className="Text1">
+      Постимпрессиони́зм (фр. postimpressionisme, от лат. post — «после» и «импрессионизм») — художественное направление, условное собирательное обозначение неоднородной совокупности основных направлений в европейской живописи; термин, принятый в искусствознании для обозначения магистральной линии развития французского искусства начиная со второй половины 1880-х годов до начала XX века.
+      </div>
+    </div>
+    <div className="second">
+      <div className="zag2">
+            Поп-Арт
+      </div>
+      <img src={pic2} alt="Поп-Арт" className="pic2"/>
+      <div className="Text2">Поп-а́рт (англ. pop art, сокращение от popular art — популярное или естественное искусство) — направление в изобразительном искусстве Западной Европы и США конца 1950—1960-х годов, возникшее как реакция отрицания на абстрактный экспрессионизм. В качестве основного предмета и образа поп-арт использовал образы продуктов потребления. Фактически это направление в искусстве подменило традиционное изобразительное творчество — на демонстрацию тех или иных объектов массовой культуры или вещественного мира. </div>
+    </div>
+  </div>,
+  document.querySelector(".app")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
